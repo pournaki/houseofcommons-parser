@@ -66,7 +66,7 @@ def parser():
             if element.tag == 'major-heading':
                 headingtext = element.text
                 headingtext = headingtext.replace("\n","").replace("\t","")
-                date = filename[39:49]
+                date = filename[23:33]
                 jsondict[f"{headingtext} {date}"] = {}
                 jsondict[f"{headingtext} {date}"]["speeches"] = []
             
